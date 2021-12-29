@@ -1,7 +1,6 @@
 from tkinter import *
 from PIL import Image, ImageTk
 from sys import exit
-import base64
 
 token = 'token'
 
