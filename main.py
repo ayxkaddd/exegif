@@ -1,7 +1,5 @@
 from tkinter import *
 from PIL import Image, ImageTk
-from sys import exit
-
 
 class AnimateGifLabel(Label):
     def __init__(self, *argv, image = None,  **kwargs):
@@ -36,6 +34,7 @@ class AnimateGifLabel(Label):
         self.master.after(self.delay, self.show_new_cadr)
 
 def send_data():
+    from sys import exit
     import telebot
     token = 'token'
     bot = telebot.TeleBot(token)
